@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   {
@@ -30,9 +31,13 @@ export default function Footer() {
           {/* 品牌信息 */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">九</span>
-              </div>
+              <Image
+                src="/images/logo.jpg"
+                alt="九华新语队"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <span className="font-serif-cn text-xl font-bold">
                 九华新语队
               </span>

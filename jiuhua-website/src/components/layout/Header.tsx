@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +25,7 @@ export default function Header() {
   const backgroundColor = useTransform(
     scrollY,
     [0, 100],
-    ["rgba(245, 245, 220, 0)", "rgba(245, 245, 220, 0.9)"]
+    ["rgba(250, 250, 245, 0)", "rgba(250, 250, 245, 0.95)"]
   );
 
   const boxShadow = useTransform(
@@ -50,17 +51,19 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center">
             <motion.div
-              className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <span className="text-white font-bold text-lg">九</span>
+              <Image
+                src="/images/logo.jpg"
+                alt="九华新语队"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
             </motion.div>
-            <span className="font-serif-cn text-xl font-bold text-primary-700">
-              九华新语
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
