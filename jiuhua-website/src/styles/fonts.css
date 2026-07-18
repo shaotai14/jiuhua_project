@@ -1,0 +1,23 @@
+/* 字体配置 */
+@import '@fontsource/noto-serif-sc/400.css';
+@import '@fontsource/noto-serif-sc/700.css';
+@import '@fontsource/noto-sans-sc/400.css';
+@import '@fontsource/noto-sans-sc/700.css';
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/lora/400.css';
+@import '@fontsource/lora/700.css';
+
+:root {
+  /* 中文字体 */
+  --font-serif-cn: 'Noto Serif SC', serif;
+  --font-sans-cn: 'Noto Sans SC', sans-serif;
+
+  /* 英文字体 */
+  --font-serif-en: 'Playfair Display', serif;
+  --font-sans-en: 'Lora', serif;
+
+  /* 默认字体 */
+  --font-primary: var(--font-sans-cn);
+  --font-heading: var(--font-serif-cn);
+}
