@@ -137,8 +137,7 @@ jiuhua-website/
 ### 自托管服务器
 1. 构建生产版本：`npm run build`
 2. 启动生产服务器：`npm run start`
-3. 使用PM2或systemd管理进程
-4. 配置Nginx反向代理
+3. 使用PM2管理进程：`pm2 start ecosystem.config.js`
 
 ### Vercel部署
 1. 连接GitHub仓库
